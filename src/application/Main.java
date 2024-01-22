@@ -25,7 +25,6 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			//primaryStage.setTitle("CtStock PFC");
 			primaryStage.show();
-			System.out.println("prueba");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
