@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrincipalController">
+   <left>
+      <AnchorPane prefHeight="479.0" prefWidth="195.0" style="-fx-background-color: #154B7D;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="34.0" prefHeight="62.0" prefWidth="176.0" text="CTSTOCK" textFill="#f4f2f2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Button fx:id="productosButton" alignment="CENTER" layoutX="21.0" layoutY="126.0" mnemonicParsing="false" onAction="#productosButtonOnAction" prefHeight="35.0" prefWidth="105.0" text="PRODUCTOS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="proveedoresButton" layoutX="21.0" layoutY="207.0" mnemonicParsing="false" onAction="#proveedoresButtonOnAction" prefHeight="35.0" prefWidth="111.0" text="PROVEEDORES">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="categoriasButton" layoutX="21.0" layoutY="286.0" mnemonicParsing="false" onAction="#categoriasButtonOnAction" prefHeight="35.0" prefWidth="111.0" text="CATEGORÍAS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="productoAddButton" layoutX="153.0" layoutY="130.0" mnemonicParsing="false" onAction="#productoAddButtonOnAction" prefHeight="26.0" prefWidth="27.0" text="+" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="479.0" prefWidth="573.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tablaProductos" layoutX="11.0" layoutY="-1.0" prefHeight="479.0" prefWidth="585.0">
+              <columns>
+                <TableColumn fx:id="nombre" prefWidth="98.39996337890625" text="Producto" />
+                  <TableColumn fx:id="precio" prefWidth="96.00000762939453" text="Precio" />
+                  <TableColumn fx:id="proveedor" prefWidth="144.80001831054688" text="Proveedor" />
+                  <TableColumn fx:id="categoria" minWidth="4.800018310546875" prefWidth="114.39996337890625" text="Categoria" />
+                  <TableColumn fx:id="accion" prefWidth="129.59993896484377" text="Accion" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

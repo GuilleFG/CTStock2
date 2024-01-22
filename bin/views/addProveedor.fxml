@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddProveedorController">
+   <top>
+      <AnchorPane prefHeight="81.0" prefWidth="600.0" style="-fx-background-color: #154B7D;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="116.0" layoutY="16.0" prefHeight="46.0" prefWidth="331.0" text="AÑADIR NUEVO PROVEEDOR">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="318.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="nombreTextField" layoutX="25.0" layoutY="83.0" prefHeight="26.0" prefWidth="110.0" />
+            <Label layoutX="25.0" layoutY="51.0" prefHeight="18.0" prefWidth="97.0" text="NOMBRE" />
+            <TextField fx:id="telefonoTextField" layoutX="164.0" layoutY="83.0" prefHeight="26.0" prefWidth="110.0" />
+            <Label layoutX="164.0" layoutY="51.0" prefHeight="18.0" prefWidth="97.0" text="TELÉFONO" />
+            <TextField fx:id="emailTextField" layoutX="307.0" layoutY="83.0" prefHeight="26.0" prefWidth="110.0" />
+            <Label layoutX="307.0" layoutY="51.0" prefHeight="18.0" prefWidth="97.0" text="EMAIL" />
+            <TextField fx:id="contactoTextField" layoutX="446.0" layoutY="83.0" prefHeight="26.0" prefWidth="110.0" />
+            <Label layoutX="446.0" layoutY="51.0" prefHeight="18.0" prefWidth="97.0" text="CONTACTO" />
+            <Button fx:id="addButton" layoutX="159.0" layoutY="147.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="46.0" prefWidth="266.0" text="AÑADIR" />
+            <Label fx:id="messageLabel" layoutX="105.0" layoutY="233.0" prefHeight="35.0" prefWidth="398.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelarButton" layoutX="159.0" layoutY="221.0" mnemonicParsing="false" onAction="#cancelarButtonOnAction" prefHeight="46.0" prefWidth="266.0" text="CANCELAR" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
