@@ -12,12 +12,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-//			Parent root = FXMLLoader.load(getClass().getResource("/views/principal.fxml"));
-//			
-//			Stage mainStage = new Stage();
-//			//mainStage.initStyle(StageStyle.UNDECORATED);
-//			mainStage.setScene(new Scene(root,780, 479));
-//			mainStage.show();
+
 			Parent root = FXMLLoader.load(getClass().getResource("/views/login.fxml"));
 			//quitamos el marco de la ventana
 			primaryStage.initStyle(StageStyle.UNDECORATED);
